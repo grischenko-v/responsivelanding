@@ -48,7 +48,7 @@ $transition-delay: 0.05s;
   & ~ .nav {
     margin-bottom: 50px;
     pointer-events: auto;
-    transform: translate(0px, 28px);
+    transform: translate(12px, 28px);
     float: right;
     // Restoring nav items from "lines" in the menu icon
     .nav-item {
