@@ -1,9 +1,25 @@
+
 $items: 4;
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
 
 header{
-	background-color: rgb(55,60,62);
+
+	  @include respond-to($phone-small) {
+	background-color: black;
+    }
+
+      @include respond-to($phone-big) {
+	background-color: red;
+    }
+      @include respond-to($tablet-portrait) {
+	background-color: green;
+
+    }
+      @include respond-to($large-desktop){
+        background-color: orange;
+
+    }
 	min-height: 37px;
 
     
