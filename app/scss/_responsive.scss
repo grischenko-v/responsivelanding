@@ -1,8 +1,7 @@
-$phone-small: '(max-width: 767px)';
-$phone-big: '(min-width: 768px) and (max-width: 991px)';
-$tablet-portrait: '(min-width: 991px) and (max-width: 1199px)';
-$large-desktop: '(min-width: 1200px)';
-
+$phone-small: '(max-width: 639px)';
+$phone-big: '(min-width: 640px) and (max-width: 979px)';
+$tablet-portrait: '(min-width: 980px) and (max-width: 1023px)';
+$large-desktop: '(min-width: 1024px)';
 
 @mixin respond-to($media) {
     @media only screen and #{$media} {
