@@ -7,11 +7,21 @@ header{
   background-color: black; 
 
   @include respond-to($phone-small) {
-  min-height: 37px;
+   min-height: 37px;
+   .header-rext{
+    display: inline-block;
+    float: left;
+    h1{
+  	  color: white;
+  	  font-size:25px;
+  	  line-height: 35px;
+    }
+  }  
   #toggle {
     position: absolute;
     left: -100%;
     top: -100%;
+    visibility: hidden;
   }
   #toggle:checked {  
     & ~ .toggle-container .button-toggle {
@@ -24,19 +34,20 @@ header{
       }
     }
     & ~ .nav {
-      margin-bottom: 50px;
+      margin-bottom: 0px;
       pointer-events: auto;
-      transform: translate(12px, 28px);
+      transform: translate(6px, 28px);
       float: right;   
       .nav-item {
         color: white;
         background-color: black;
         letter-spacing: 0;
         width: 120px;
-        height: 30px;
+        height: 20px;
+        font-size: 15px;
         text-align: center;
         border-bottom: 1px solid white;
-        line-height: 35px;
+        line-height: 20px;
         text-decoration: none;
         margin-top: 0;
         opacity: 1;
@@ -59,13 +70,13 @@ header{
   }
   .button-toggle {
     position: absolute;
-    right: 254px;
+    right: 45px;    
     display: inline-block;
-    width: 37px;
-    height: 37px;
-    margin: 0px;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
     background-color: black;
-    border: none;
+    border: 2px solid red;
     cursor: pointer;
     transition: $transition-duration + 0.1;
     &:before, &:after {
@@ -91,36 +102,42 @@ header{
     display: inline-block;
     margin: 9px 10px 10px; 
     pointer-events: none;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     transition: $transition-duration;
     position: absolute;
-    right: 254px;
+    right: 40px;
   }
 
-  .nav-item {
+   .nav-item {
     position: relative;
     display: inline-block;
     float: right;
     clear: both;
     color: transparent;
-    font-size: 14px;
-    letter-spacing: -6.2px;
-    height: 7px;
-    line-height: 7px;
+    font-size: 9px;
+    letter-spacing: -6px;
+    height: 5px;
+    line-height: 5px;
     text-transform: uppercase;
     white-space: nowrap;
     transform: scaleY(0.2);
     transition: $transition-duration, opacity 1s;
     &:nth-child(1) {
-      letter-spacing: -8px;
+      letter-spacing: -3.3px;
     }
     &:nth-child(2) {
-      letter-spacing: -7px;
+      letter-spacing: -1.1px;
     }  
-    &:nth-child(n + 4) {
-      letter-spacing: -8px;
-      margin-top: -7px;
+    &:nth-child(3) {
+      letter-spacing: -3.9px;
+    }  
+    &:nth-child(4) {
+      letter-spacing: -2.1px;
+    }  
+    &:nth-child(n+5) {
+      letter-spacing: -3px;   
+      margin-top: -12px;
       opacity: 0;
     }
     &:before {
@@ -137,12 +154,21 @@ header{
   }
  }
  @include respond-to($phone-big) {
-	min-height: 37px;
-
+  min-height: 73px;
+ .header-rext{
+    display: inline-block;
+    float: left;
+    h1{
+  	  color: white;
+  	  font-size:35px;
+  	  line-height: 65px;
+    }
+  } 
   #toggle {
     position: absolute;
     left: -100%;
     top: -100%;
+    visibility: hidden;
   }
   #toggle:checked {  
     & ~ .toggle-container .button-toggle {
@@ -157,17 +183,17 @@ header{
     & ~ .nav {
       margin-bottom: 50px;
       pointer-events: auto;
-      transform: translate(12px, 28px);
+      transform: translate(4px, 28px);
       float: right;   
       .nav-item {
         color: white;
         background-color: black;
         letter-spacing: 0;
-        width: 120px;
-        height: 30px;
+        width: 149px;
+        height: 35px;
         text-align: center;
         border-bottom: 1px solid white;
-        line-height: 35px;
+        line-height: 33px;
         text-decoration: none;
         margin-top: 0;
         opacity: 1;
@@ -188,15 +214,16 @@ header{
      }
     }
   }
-  .button-toggle {
+  .button-toggle{
     position: absolute;
-    right: 254px;
+    right: 54px;
+    top: 15px;
     display: inline-block;
     width: 37px;
     height: 37px;
     margin: 0px;
     background-color: black;
-    border: none;
+    border: 2px solid red;   
     cursor: pointer;
     transition: $transition-duration + 0.1;
     &:before, &:after {
@@ -220,13 +247,14 @@ header{
 
   .nav {
     display: inline-block;
-    margin: 9px 10px 10px; 
+    margin: 4px 5px 10px; 
     pointer-events: none;
     width: 20px;
     height: 20px;
     transition: $transition-duration;
     position: absolute;
-    right: 254px;
+    right: 54px;
+    top: 18px;
   }
 
   .nav-item {
@@ -236,7 +264,7 @@ header{
     clear: both;
     color: transparent;
     font-size: 14px;
-    letter-spacing: -6.2px;
+    letter-spacing: -8px;
     height: 7px;
     line-height: 7px;
     text-transform: uppercase;
@@ -244,14 +272,20 @@ header{
     transform: scaleY(0.2);
     transition: $transition-duration, opacity 1s;
     &:nth-child(1) {
-      letter-spacing: -8px;
+      letter-spacing: -6.1px;
     }
     &:nth-child(2) {
-      letter-spacing: -7px;
+      letter-spacing: -4px;
     }  
-    &:nth-child(n + 4) {
-      letter-spacing: -8px;
-      margin-top: -7px;
+    &:nth-child(3) {
+      letter-spacing: -6.9px;
+    }  
+    &:nth-child(4) {
+      letter-spacing: -4px;
+    }  
+    &:nth-child(n+5) {
+      letter-spacing: -3px;   
+      margin-top: -19px;
       opacity: 0;
     }
     &:before {
@@ -268,16 +302,53 @@ header{
   }
  }  
   @include respond-to($tablet-portrait) {
-	background-color: green;
+	background-color: black;	
+	min-height: 97px;
 	#toggle {
       display:none;
     }
-
+    h1{
+  	  display: none;
+    }
+    nav{
+      margin-left: 25px;
+    }
+    .nav-item{
+      display: inline-block;
+      margin-right: 20px;     
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      line-height: 85px;
+      text-transform: uppercase;     
+      &:last-of-type{
+      	margin-right: 0;
+      }
+    }   
   }
   @include respond-to($large-desktop){
-     background-color: orange;
+     background-color: black;    
+     min-height: 97px;
      #toggle {
       display:none;
+    }
+    h1{
+  	  display: none;
+    }
+    nav{
+      margin-left: 25px;
+    }
+    .nav-item{
+      display: inline-block;
+      margin-right: 20px;     
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      line-height: 85px;
+      text-transform: uppercase;     
+      &:last-of-type{
+      	margin-right: 0;
+      }
     }
   }
 }
