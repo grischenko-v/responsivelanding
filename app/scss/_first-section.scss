@@ -1,0 +1,69 @@
+.first{
+   .header-text{
+      box-sizing:border-box;
+      background-color: rgb(9, 150, 174);
+
+     
+       min-height: 700px;
+
+       @include respond-to($phone-small){
+         min-height: 170px;
+         padding-top: 57px;
+         .text-wrapper{
+       	 	font-size: 16px;
+       	 	color: white;
+       	 	width: 176px;
+       	 	height: 39px;
+       	 	margin-left: 30px;
+       	 }
+       }
+       @include respond-to($phone-big){
+         min-height: 354px;
+         padding-top: 115px;
+         .text-wrapper{
+       	 	font-size: 33px;
+       	 	color: white;
+       	 	width: 320px;
+       	 	height: 77px;
+       	 	margin-left: 53px;
+       	 }
+       }
+       @include respond-to($tablet-portrait){
+         min-height: 553px;
+         padding-top: 180px;
+         .text-wrapper{
+       	 	font-size: 44px;
+       	 	color: white;
+       	 	width: 440px;
+       	 	height: 47px;
+       	 	margin-left: 73px;
+       	 }
+       }
+       @include respond-to($large-desktop){
+       	 min-height: 581px;
+       	 padding-top: 200px;
+       	 .text-wrapper{
+       	 	font-size: 48px;
+       	 	color: white;
+       	 	width: 450px;
+       	 	height: 52px;
+       	 	margin-left: 80px;
+       	 }
+       	 .link-wrapper{
+       	 	color:rgb(172, 215, 215);
+       	 	width: 1000px;
+       	 	display: inline-block;
+       	 	margin-top: 60px; 
+       	 	margin-left: 80px;
+            font-size: 30px;
+       	 	.arrow{
+       	 		float: right;
+       	 		margin-right: 260px;
+       	 		display: block;
+       	 		color: white;
+       	 	}
+       	 }
+       }
+   }
+
+}
