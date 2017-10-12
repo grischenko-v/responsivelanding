@@ -3,7 +3,13 @@
       box-sizing:border-box;
       background-color: rgb(9, 150, 174);
 
-     
+       svg{
+       	 width:20px;
+       	 height:20px;
+       	 float: left;
+       	 display: block;
+       }
+
        min-height: 700px;
 
        @include respond-to($phone-small){
@@ -16,6 +22,16 @@
        	 	height: 39px;
        	 	margin-left: 30px;
        	 }
+       	 .link-wrapper{
+       	 	color:rgb(172, 215, 215);
+       	 	width: 200px;
+       	 	display: block;
+       	 	margin-top: 5px; 
+       	 	margin-left: 30px;
+            font-size: 12px;
+       	 	
+       	 }
+       	
        }
        @include respond-to($phone-big){
          min-height: 354px;
@@ -27,6 +43,16 @@
        	 	height: 77px;
        	 	margin-left: 53px;
        	 }
+       	 .link-wrapper{
+       	 	color:rgb(172, 215, 215);
+       	 	width: 1000px;
+       	 	display: block;
+       	 	margin-top: 10px; 
+       	 	margin-left: 50px;
+            font-size: 20px;
+       	 	
+       	 }
+      
        }
        @include respond-to($tablet-portrait){
          min-height: 553px;
@@ -38,6 +64,15 @@
        	 	height: 47px;
        	 	margin-left: 73px;
        	 }
+       	 .link-wrapper{
+       	 	color:rgb(172, 215, 215);
+       	 	width: 1000px;
+       	 	display: block;
+       	 	margin-top: 65px; 
+       	 	margin-left: 80px;
+            font-size: 30px;
+       	 	
+       	 }       	 
        }
        @include respond-to($large-desktop){
        	 min-height: 581px;
@@ -52,17 +87,13 @@
        	 .link-wrapper{
        	 	color:rgb(172, 215, 215);
        	 	width: 1000px;
-       	 	display: inline-block;
-       	 	margin-top: 60px; 
+       	 	display: block;
+       	 	margin-top: 65px; 
        	 	margin-left: 80px;
             font-size: 30px;
-       	 	.arrow{
-       	 		float: right;
-       	 		margin-right: 260px;
-       	 		display: block;
-       	 		color: white;
-       	 	}
+       	 	
        	 }
+       	
        }
    }
 
