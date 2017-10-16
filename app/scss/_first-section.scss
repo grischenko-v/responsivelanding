@@ -2,12 +2,13 @@
    .header-text{
       box-sizing:border-box;    
       background: linear-gradient(to right, rgb(15, 167, 188), rgb(7, 138, 164));
- 
+      box-shadow: border-box;
+      min-height: 700px;
+      svg, .link-wrapper{
+      	cursor: pointer;
+      }
 
-
-       min-height: 700px;
-
-       @include respond-to($phone-small){
+      @include respond-to($phone-small){
          min-height: 170px;
          padding-top: 57px;
          .text-wrapper{
