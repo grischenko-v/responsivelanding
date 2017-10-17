@@ -1,0 +1,24 @@
+.three{
+    min-height: 200px;
+    background-color: #dcd;
+    .square{
+      height: 300px;
+      width: 300px;
+      background-color: rgb(91, 15, 161);	
+      display: inline-block;
+    }
+    .bridge{
+    	height: 300px;
+    	width: 300px;
+		background-image: url("../img/bridge.png");
+		background-repeat: no-repeat;
+		display: inline-block;
+    }
+	.smile{
+		height: 300px;
+		width: 300px;
+		background-image: url("../img/smile.png");
+		background-repeat: no-repeat;
+		display: inline-block;
+	}
+}
