@@ -1,24 +1,33 @@
 .three{
-    min-height: 200px;
-    background-color: #dcd;
+    min-height: 296px;
+    background-color: rgb(91, 15, 161);
+    svg{
+    	width: 40px;
+    	height: 40px;
+    	float: left;
+    	margin-left: 150px;
+    	margin-top: 150px;
+    }
     .square{
-      height: 300px;
-      width: 300px;
+      height: 297px;
+      width: 336px;
       background-color: rgb(91, 15, 161);	
       display: inline-block;
     }
     .bridge{
-    	height: 300px;
-    	width: 300px;
+    	height: 297px;
+    	width: 336px;
 		background-image: url("../img/bridge.png");
 		background-repeat: no-repeat;
+		background-size: cover;
 		display: inline-block;
     }
 	.smile{
-		height: 300px;
-		width: 300px;
+		height: 297px;
+		width: 336px;
 		background-image: url("../img/smile.png");
 		background-repeat: no-repeat;
+		background-size: cover;
 		display: inline-block;
 	}
 }
