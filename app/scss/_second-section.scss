@@ -2,15 +2,81 @@
 	overflow: hidden;
 	background-color: rgb(39, 33, 44);
     @include respond-to($phone-small){
-
+      min-height: 73px;	
+	  box-shadow: border-box;
+     .like-section{
+      float: left;
+      background-color: rgb(39, 33, 44);
+      color:rgb(147, 131, 162);     
+      width: 243px;
+      line-height: 73px;
+      font-size: 12px;
+      text-align: center;
+     }
+     .arrow-section{
+      float: right;
+      background-color: rgb(188, 49, 131);
+      min-height: 73px;
+      width: 72px;
+      cursor: pointer;
+      svg{
+     	width: 18px;  
+     	margin-top: 25px;
+        margin-left: 25px;
+      }
+     }
 
     }
 	@include respond-to($phone-big){
-
+      min-height: 146px;	
+	  box-shadow: border-box;
+     .like-section{
+      float: left;
+      background-color: rgb(39, 33, 44);
+      color:rgb(147, 131, 162);     
+      width: 495px;
+      line-height: 146px;
+      font-size: 15px;
+      text-align: center;
+     }
+     .arrow-section{
+      float: right;
+      background-color: rgb(188, 49, 131);
+      min-height: 146px;
+      width: 140px;
+      cursor: pointer;
+      svg{
+     	width: 25px;  
+     	margin-top: 60px;
+        margin-left: 55px;
+      }
+     }
 
 	}
 	@include respond-to($tablet-portrait){
-
+      min-height: 231px;	
+	  box-shadow: border-box;
+     .like-section{
+      float: left;
+      background-color: rgb(39, 33, 44);
+      color:rgb(147, 131, 162);     
+      width: 755px;
+      line-height: 231px;
+      font-size: 22px;
+      text-align: center;
+     }
+     .arrow-section{
+      float: right;
+      background-color: rgb(188, 49, 131);
+      min-height: 231px;
+      width: 217px;
+      cursor: pointer;
+      svg{
+     	width: 30px;  
+     	margin-top: 100px;
+        margin-left: 95px;
+      }
+     } 
 
 	}
 	@include respond-to($large-desktop){
