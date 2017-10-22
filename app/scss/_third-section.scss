@@ -42,27 +42,27 @@
     	width: 40px;
     	height: 40px;
     	float: left;
-    	margin-left: 150px;
-    	margin-top: 150px;
+    	margin-left: 300px;
+    	margin-top: 200px;
       }
       .square{
-        height: 273px;
-        width: 320px;
+        height: 473px;
+		width: 700px;
         background-color: rgb(91, 15, 161);	
         display: block;
       }
       .bridge{
-    	height: 273px;
-    	width: 320px;
-		background-image: url("../img/bridge.png");
+    	height: 473px;
+		width: 700px;
+		background-image: url("../img/bridge-big.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: block;
       } 
 	  .smile{
-		height: 273px;
-		width: 320px;
-		background-image: url("../img/smile.png");
+		height: 473px;
+		width: 700px;
+		background-image: url("../img/smile-big.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: block;
@@ -86,7 +86,7 @@
       .bridge{
     	height: 297px;
     	width: 316px;
-		background-image: url("../img/bridge-big.png");
+		background-image: url("../img/bridge.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: inline-block;
@@ -94,7 +94,7 @@
 	  .smile{
 		height: 297px;
 		width: 316px;
-		background-image: url("../img/smile-big.png");
+		background-image: url("../img/smile.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: inline-block;
