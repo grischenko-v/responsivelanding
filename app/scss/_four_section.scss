@@ -1,24 +1,30 @@
 .four{
   background-color:rgb(235,235,235);
   min-height: 567px;
+  padding-top: 57px;
+  a{
+  	text-decoration: none;
+  }
    h2{
     	color: rgb(8, 140, 165);
     	font-size: 30px;
-    }
+   }
   .text-wrapper{  
-    column-width: 200px;   
+    column-width: 400px;   
     column-count: 2;    
-    column-gap: 30px;    
-    column-rule: 1px solid #ccc;
+    column-gap: 60px;   
+    text-indent: 20px;     
     padding-top: 20px;
     box-sizing: border-box;
     p{
-    	margin-top: 20px;
-    	color: rgb(81, 81, 81);
+      margin-top: 20px;
+      color: rgb(81, 81, 81);
+      font-size: 14px;
+      line-height: 20px;
       &:first-of-type{      	
         margin-top: 0;
       }
-    }
+     }
     }  
     @include respond-to($tablet-portrait){
      min-height: 552px;
@@ -26,12 +32,16 @@
     }
 
     @include respond-to($phone-big){
-    	min-height: 892px;
+    	min-height: 692px;
        .text_for_lg{
        	  display: none;
        }
         .text-wrapper{  
         	column-count: 1;  
+        	p{
+        	  line-height: 30px; 
+        	  font-size: 18px;
+        	}
         }
     }
     
