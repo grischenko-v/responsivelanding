@@ -1,5 +1,6 @@
 .four{
   background-color:rgb(235,235,235);
+  min-height: 567px;
    h2{
     	color: rgb(8, 140, 165);
     	font-size: 30px;
@@ -13,10 +14,35 @@
     box-sizing: border-box;
     p{
     	margin-top: 20px;
-    	color: #aaa;
+    	color: rgb(81, 81, 81);
       &:first-of-type{      	
         margin-top: 0;
       }
-    }   
-  } 
+    }
+    }  
+    @include respond-to($tablet-portrait){
+     min-height: 552px;
+
+    }
+
+    @include respond-to($phone-big){
+    	min-height: 892px;
+       .text_for_lg{
+       	  display: none;
+       }
+        .text-wrapper{  
+        	column-count: 1;  
+        }
+    }
+    
+    @include respond-to($phone-small){
+    	min-height: 440px;
+       .text_for_lg{
+       	  display: none;
+       }
+        .text-wrapper{  
+          column-count: 1;  
+        }
+    }
+  
 }
