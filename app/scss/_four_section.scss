@@ -1,0 +1,22 @@
+.four{
+  background-color:rgb(235,235,235);
+   h2{
+    	color: rgb(8, 140, 165);
+    	font-size: 30px;
+    }
+  .text-wrapper{  
+    column-width: 200px;   
+    column-count: 2;    
+    column-gap: 30px;    
+    column-rule: 1px solid #ccc;
+    padding-top: 20px;
+    box-sizing: border-box;
+    p{
+    	margin-top: 20px;
+    	color: #aaa;
+      &:first-of-type{      	
+        margin-top: 0;
+      }
+    }   
+  } 
+}
