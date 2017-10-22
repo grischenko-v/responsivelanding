@@ -1,11 +1,11 @@
 .three{
    
     background-color: rgb(91, 15, 161);
-
+    box-sizing:border-box;
 
 
   @include respond-to($phone-small){
-      min-height: 823px;
+      height: 840px;
       svg{
     	width: 40px;
     	height: 40px;
@@ -14,22 +14,22 @@
     	margin-top: 150px;
       }
       .square{
-        height: 297px;
-        width: 336px;
+        height: 280px;
+        width: 320px;
         background-color: rgb(91, 15, 161);	
         display: block;
       }
       .bridge{
-    	height: 297px;
-    	width: 336px;
+    	height: 280px;
+    	width: 320px;
 		background-image: url("../img/bridge.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: block;
       } 
 	  .smile{
-		height: 297px;
-		width: 336px;
+		height: 280px;
+		width: 320px;
 		background-image: url("../img/smile.png");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -37,31 +37,31 @@
 	  }
     }
      @include respond-to($phone-big){
-      min-height: 296px;
+      height: 1656px;
       svg{
     	width: 40px;
     	height: 40px;
     	float: left;
-    	margin-left: 300px;
-    	margin-top: 200px;
+    	margin-left: 320px;
+    	margin-top: 275px;
       }
       .square{
-        height: 473px;
-		width: 700px;
+        height: 552px;
+		width: 640px;
         background-color: rgb(91, 15, 161);	
         display: block;
       }
       .bridge{
-    	height: 473px;
-		width: 700px;
+    	height: 552px;
+		width: 640px;
 		background-image: url("../img/bridge-big.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: block;
       } 
 	  .smile{
-		height: 473px;
-		width: 700px;
+		height: 552px;
+		width: 640px;
 		background-image: url("../img/smile-big.png");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -69,31 +69,33 @@
 	  }
     }
      @include respond-to($tablet-portrait){
-      min-height: 296px;
+      height: 282px;
       svg{
     	width: 40px;
     	height: 40px;
     	float: left;
-    	margin-left: 150px;
-    	margin-top: 150px;
+    	margin-left: 164px;
+    	margin-top: 141px;
       }
       .square{
-        height: 297px;
-        width: 316px;
+        height: 282px;
+        width: 328px;
         background-color: rgb(91, 15, 161);	
         display: inline-block;
       }
       .bridge{
-    	height: 297px;
-    	width: 316px;
+    	height: 282px;
+    	width: 328px;
+    	margin-left: -6px;
 		background-image: url("../img/bridge.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: inline-block;
       } 
 	  .smile{
-		height: 297px;
-		width: 316px;
+		height: 282px;
+		width: 328px;
+		margin-left: -6px;
 		background-image: url("../img/smile.png");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -101,34 +103,36 @@
 	  }
     }   
     @include respond-to($large-desktop){
-      min-height: 296px;
+      height: 295px;
       svg{
     	width: 40px;
     	height: 40px;
     	float: left;
-    	margin-left: 150px;
-    	margin-top: 150px;
+    	margin-left: 170px;
+    	margin-top: 130px;
       }
       .square{
-        height: 297px;
-        width: 336px;
+      	height: 295px;
+        width: 340px;
+        margin-bottom: 1px;
         background-color: rgb(91, 15, 161);	
         display: inline-block;
       }
       .bridge{
-    	height: 297px;
-    	width: 336px;
+        height: 296px;
+        width: 340px;
+        margin-left: -2px;
 		background-image: url("../img/bridge.png");
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-repeat: no-repeat;		
 		display: inline-block;
       } 
 	  .smile{
-		height: 297px;
-		width: 336px;
+		height: 296px;
+        width: 340px;
+        margin-left: -3px;
 		background-image: url("../img/smile.png");
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100%;
 		display: inline-block;
 	  }
     }	
