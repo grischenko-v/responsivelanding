@@ -75,8 +75,7 @@ header{
     width: 25px;
     height: 25px;
     margin-top: 5px;
-    background-color: black;
-    border: 2px solid red;
+    background-color: black;   
     cursor: pointer;
     transition: $transition-duration + 0.1;
     &:before, &:after {
@@ -118,26 +117,27 @@ header{
     font-size: 9px;
     letter-spacing: -6px;
     height: 5px;
-    line-height: 5px;
+    line-height: 8px;
     text-transform: uppercase;
     white-space: nowrap;
     transform: scaleY(0.2);
     transition: $transition-duration, opacity 1s;
     &:nth-child(1) {
-      letter-spacing: -3.3px;
+      letter-spacing: -3.5px;
     }
     &:nth-child(2) {
-      letter-spacing: -1.1px;
+      letter-spacing: -1.0px;
     }  
     &:nth-child(3) {
       letter-spacing: -3.9px;
     }  
     &:nth-child(4) {
-      letter-spacing: -2.1px;
+      letter-spacing: -2.3px;
+      margin-right: 1px;
     }  
     &:nth-child(n+5) {
-      letter-spacing: -3px;   
-      margin-top: -12px;
+      letter-spacing: -2px;   
+      margin-top: -10px;
       opacity: 0;
     }
     &:before {
@@ -222,8 +222,7 @@ header{
     width: 37px;
     height: 37px;
     margin: 0px;
-    background-color: black;
-    border: 2px solid red;   
+    background-color: black;     
     cursor: pointer;
     transition: $transition-duration + 0.1;
     &:before, &:after {
@@ -275,13 +274,13 @@ header{
       letter-spacing: -6.1px;
     }
     &:nth-child(2) {
-      letter-spacing: -4px;
+      letter-spacing: -3px;
     }  
     &:nth-child(3) {
-      letter-spacing: -6.9px;
+      letter-spacing: -6.58px;
     }  
     &:nth-child(4) {
-      letter-spacing: -4px;
+      letter-spacing: -4.8px;
     }  
     &:nth-child(n+5) {
       letter-spacing: -3px;   
